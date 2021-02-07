@@ -24,10 +24,8 @@ mongo.on("debug", console.log);
 async function getName() {
   mongo.init('age','19');
   mongo.get('age')
-  //-> 21
   mongo.init('name','Toby');
   mongo.get('name');
-  //-> Lason
 }
 
 client.login(token);
