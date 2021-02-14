@@ -2,7 +2,7 @@ const { Client, Collection  } = require('discord.js');
 const db = require('hive-db');
 const {database} = db.mongo;
 const client = new Client({ disableMentions: 'everyone' })
-const mongo = new database("mongodb+srv://root:Hyg57aff@vinci.ujdc9.mongodb.net/Vinci", { useUnique: true });
+const mongo = new database("mongourl", { useUnique: true });
 const {token, prefix } = require('./config.json');
 
 mongo.on("ready", () => {
